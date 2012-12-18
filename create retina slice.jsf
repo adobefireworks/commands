@@ -1,0 +1,32 @@
+var dom= fw.getDocumentDOM();
+
+dom.selectAll();
+dom.clipCopy();
+
+function addPage(index,name){
+  dom.addNewPage();
+	dom.setPageName(index, name);
+	dom.clipPaste();
+	dom.setDocumentCanvasSizeToDocumentExtents(true);
+}
+
+addPage(1, "retina");
+addPage(2, "normal");
+
+dom.changeCurrentPage(2);
+var w = dom.width;
+var h = dom.height;
+dom.setDocumentImageSize({left:0, top:0, right:w/2, bottom:h/2},{pixelsPerUnit:72, units:"inch"}, true);
+dom.changeCurrentPage(1);
+dom.selectAll();
+var postfix = prompt('postfix','_2x')
+function chgSliceName(){
+	var s = fw.selection;
+	for(var i=0;i<s.length;i++){
+		var target = s[i];
+		if(!target.baseName) return;
+		target.baseName = target.baseName+postfix;
+	}
+}
+chgSliceName();
+
