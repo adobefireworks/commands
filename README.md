@@ -18,7 +18,7 @@ If you use pages in fireworks when export slices, you want to hide master page f
 This command toggle the visibility of the master page.  
 >Credit to Yoropan
 
-## Split to Retina and Normal pages
+## Create Retina Slice
 This command will take the working page and split them into 'Retina" page and 'Normal' page.
 You will get a dialog window to define the postfix name to add to the slice names for the 'Retina' page. For example the postfix name can be "_2x".  
 
