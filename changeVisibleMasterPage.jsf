@@ -1,0 +1,33 @@
+try {
+    if (fw.documents.length != 0) {
+        var dom = fw.getDocumentDOM();
+        if (!fw.getDocumentDOM().isMasterPageLayer(0)) {
+            alert("This page isn't contain master page layer.")
+        } else {
+            var pName = "com.yoropan.isMasterPageVisible"
+            var isMasterVisible;
+            if (fw.getPref(pName)) {
+                isMasterVisible = fw.getPref(pName);
+            } else {
+
+                isMasterVisible = false;
+            }
+
+            var pno = dom.currentPageNum;//現在のページ
+            dom.changeCurrentPage(0);//マスターページに移動
+
+            dom = fw.getDocumentDOM();
+            var j = fw.getDocumentDOM().layers.length;
+            for (i = j; i--;) {
+                dom.setLayerVisible(i, -1, isMasterVisible, false);
+            }
+            fw.getDocumentDOM().changeCurrentPage(pno);//元のページに戻る
+        }
+        //設定保存
+        fw.setPref(pName, !isMasterVisible)
+    } else {
+        alert("No documents")
+    }
+} catch (e) {
+    alert(e)
+}
