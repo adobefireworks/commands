@@ -24,8 +24,24 @@ You will get a dialog window to define the postfix name to add to the slice name
 
 The slice names for both 'Retina' and 'Normal' pages will become btn_01_2x and btn_01 respectively. The 'Normal' page will downsize to 1/2 the size of the Retina page.
 
+## Change Canvas Size Height
+Use this command to increase the height of the canvas by +10 or +100 or -10 or -100
+
+>[fn + Control + Up Arrow] for +10  
+>[fn + Control + Opt + Up Arrow] for +100  
+>[fn + Control + Down Arrow] for -10  
+>[fn + Control + Opt + Down Arrow] for -100
+
+## Change Canvas Size Width
+Use this command to increase the width of the canvas by +10 or +100 or -10 or -100
+
+>[fn + Control + Right Arrow] for +10  
+>[fn + Control + Opt + Right Arrow] for +100  
+>[fn + Control + Right Arrow] for -10  
+>[fn + Control + Opt + Right Arrow] for -100
 
 ## Credits
 Thanks to the extension developers  
   1. Yoropan
   2. Basharogu
+  3. Akira
