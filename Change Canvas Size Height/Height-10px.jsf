@@ -1,0 +1,7 @@
+	if (fw.documents.length == 0) {
+		alert("Please open a file.");
+	}else {
+var dom = fw.getDocumentDOM();
+var value=-10;
+dom.setDocumentCanvasSize({left:0, top:0, right:dom.width, bottom:(dom.height+value)}, true);
+}
