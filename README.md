@@ -14,7 +14,7 @@ This is a commands repository as a reference for extensions development or use t
   2. Change the shortcut. 
 
 ## Toggle the visibility of the master page
-If you use pages in fireworks when export slices, you want to hide master page from all pages.
+If you use pages in Fireworks when export slices, you want to hide master page from all pages.
 This command toggle the visibility of the master page.  
 
 
