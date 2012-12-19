@@ -1,7 +1,7 @@
 #Fireworks Commands
 
 ### About  
-This is a commands repository for developers as a reference to do extension development and use them for the extra workflows.
+This is a commands repository as a reference for extensions development or use them in Fireworks.
 
 ### Install  
   1. Open "\Fireworks CS6\Configurations\Commands"
