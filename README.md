@@ -1,7 +1,7 @@
 #Fireworks Commands
 
 ### About  
-This is a repository of useful commands for anyone interested to reference from to do Fireworks extension development and also use them in Fireworks for the extra workflows.
+This is a commands repository for developers as a reference to do extension development and use them for the extra workflows.
 
 ### Install  
   1. Open "\Fireworks CS6\Configurations\Commands"
@@ -26,6 +26,6 @@ The slice names for both 'Retina' and 'Normal' pages will become btn_01_2x and b
 
 
 ## Credits
-Thanks to the extension developers
-1. Yoropan
-2. Basharogu
+Thanks to the extension developers  
+  1. Yoropan
+  2. Basharogu
